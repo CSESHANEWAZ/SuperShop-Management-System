@@ -1,0 +1,182 @@
+{% load static %} 
+
+{% block body %}
+
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width-device-width, initial-scale=1">
+
+      <title>Contact Us</title>
+      <link rel="icon" type="image/x-icon" href="/static/contact/images/letter-b.png">
+
+      <link rel="stylesheet" type="text/css" href="{% static 'contact/styles/contact.css' %}"/>
+
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    </head>
+    
+
+    <body>
+
+      <div class="container">
+        <div class="inner1">
+            <p>Contact Us</p>
+        </div>
+      </div>
+
+
+
+      <div class="img2">
+        <img class="img" src="/static/contact/images/contact2.png">
+
+      </div>
+      
+      <p class="p">
+        &emsp;&emsp;&emsp;&emsp; <span>&#8226;</span> Feel free to contact us anytime at &ensp; <span> &#9742; </span><a href="#">+880-179-0010792.</a><br>
+        &emsp;&emsp;&emsp;&emsp; <span>&#8226;</span> Or if you prefer, you can drop us a note using the form below. You'll always get a response from a real person 
+        — with a real name — within 48 hours.
+      </p>
+      
+      <div class="container">
+        
+    
+    
+        <div class="content">
+          <div class="container">
+            <h3 class="header">Contact Us</h3>
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <form id="contact-form" method="post" role="form" action="">
+                  <div class="messages"></div>
+                  <div class="controls">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <form action="/contact/" method="POST">
+                          {% csrf_token %}
+
+                        <div class="form-group">
+                          <label for="form_name"><font font color="crimson" font size="3" >Firstname *</font></label>
+                            <input type="text" name="fname" class="form-control" placeholder="Please enter your firstname " required="required" data-error="Firstname is required.">
+                               
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_lastname"><font font color="crimson" font size="3">Lastname *</font></label>
+                          <input type="text" name="lname" class="form-control" placeholder="Please enter your lastname " required="required" data-error="Lastname is required.">                      
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_email"><font font color="crimson" font size="3">Email *</font></label>
+                          <input type="email" name="email" class="form-control" placeholder="Enter your email. Ex: example@email.com" required="required" data-error="Valid email is required.">
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_phone"><font font color="crimson" font size="3">Phone</font></label>
+                          <input type="phone" name="phone" class="form-control" placeholder="Enter your phone">
+                                
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="form_message"><font font color="crimson" font size="3">Message *</font></label>
+                          <textarea name="msg" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                      </div>
+                    </div>
+                  </form>
+                    <br>
+
+
+
+                    <div class="form-group">
+                      {% if messages %}
+                      <ul class="messages">
+                        {% for message in messages%}
+                        <li>
+                          <div class="alert alert-success"> {{ message }}</div>
+                        </li>
+                        {% endfor %}
+                      </ul> 
+                      {% endif %}
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="text-muted"><strong><font font color="crimson" font size="4">*</font></strong> <font font color="black" font size="2">These fields are required. Contact form by</font><font font color="Crimson" font size="2.5"><b> BASKET</b></font>
+                          <font font color="black">SuperShop</font></p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 style="font-family: 'Gotu', sans-serif;">Or Call Us: <a href="#">+880-179-0010792.</a></h4>
+      </div>
+      <br>
+
+      
+
+      <!-----footer----->
+      <div>
+        <footer>
+          <p>
+
+            <div class="copyright">
+              Copyright &copy; 2020<strong> BUSKET.com </strong>. All Right Reserved 
+            </div>
+            
+          </p>
+        </footer>
+      </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+		     integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" 
+		    crossorigin="anonymous">
+      </script>
+
+
+
+    </body>
+  </html>
+
+
+  {% endblock %}
+
+
+

@@ -1,0 +1,123 @@
+body{
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.container .inner1{
+	position: absolute;
+	width: 100%;
+	background-color: #0009;
+	transform: translate(-50%,-50%);
+	top: 10%;
+	left: 50%;
+}
+
+.container .inner1 p{
+	color: crimson;
+	font-size: 35px;
+	font-family: 'lobster',cursive;
+	text-align: center;
+}
+
+.p{
+color: crimson;
+font-size: 15px;
+font-family: 'Gotu', sans-serif;
+text-align: justify;
+font-weight: bold;
+}
+
+h1{
+  margin-bottom: 40px;
+}
+label {
+  color: #333;
+}
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.img2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header{
+  font-family: 'Gotu', sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: crimson; 
+  text-align: center;
+}
+
+.form-group {
+  font-family: 'Gotu', sans-serif;  
+}
+
+.form-group .form-control {
+	font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****footer****/
+
+
+footer{
+  
+	background-color: crimson;
+	width: 100%;
+	font-size: 12px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding-bottom: 2px;
+	z-index: 999;
+	position: justify;
+}
+
+footer .copyright {
+	text-align: center;
+	letter-spacing: 1px;
+	color: black;
+	font-family: 'Gotu', sans-serif;
+	font-size: small;
+	padding: 8px;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+	font-size: small;
+	letter-spacing: 1px;
+}
+
+
+
+  

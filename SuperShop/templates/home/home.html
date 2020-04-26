@@ -1,0 +1,310 @@
+
+{% load static %} 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<title>WELLCOME To BASKET SuperShop</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'home/styles/home_nav.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'home/styles/home_style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'home/styles/home_slider.css' %}">
+	<link rel="icon" type="image/x-icon" href="static/home/images/letter-b.png">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700,700i&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	   
+</head>
+<body bgcolor="white"></body>
+
+
+
+
+<!---navigation---->
+	<header style="background-image: url(static/home/images/cover2.jpg);
+				   background-repeat: no-repeat;
+				   background: cover;
+				   height:600px;"
+				   class="header">
+
+		<div class="contract">Call us: <span> &#9742; </span> <a href="#">+880 - 179 - 0010792</a> || 
+			                  <span><i class="fas fa-envelope"></i>&nbsp; </span>Email: <a href="#">info@basket.com</a></div></br>
+
+		<div class="container">
+			<nav>
+				<h1 class="brand"><a href="/"><span>BA</span>S</a>KET</h1>
+
+				<!----search bar---->
+				<div class="search-box">
+					<input type="text" name="" class="search-txt" placeholder="Type to search"/>
+					<a class="search-btn" href="#">
+						<i class="fas fa-search"></i>
+					</a>
+				</div>
+
+				<ul class="d-flex flex-row align-items-start justify-content-start">
+					<li class="active"><a href="/"><b>Home</b></a></li>
+					<li><a href="/about"><b>About Us</b></a></li>	
+                 <!---<li><a href="#"><b>Gallary</b></a></li>----------------------->
+					<li><a href="/contact"><b>Contact Us</b></a></li>
+					<li><a href="/accounts"><b><i class="fas fa-user"></i> Login</b></a></li>
+					
+				</ul>
+
+			</nav>
+
+			<div class="title">
+				<h3 style="color: white;">Smart Shopping😉,<span> Better Living!</span></h3>
+			</div>
+
+		</div>
+
+		<div class="principal">
+			<h1>WELLCOME</h1>
+			<p><b>To Our Biggest Super Market</b></p>
+		</div>
+
+	</header>
+
+<br><br>
+
+<div class="row1">
+
+	<div class="column1">
+	  <a href="#"><img src="/static/home/images/discount3.jpg" alt="First Buy discount"></a> &emsp; &emsp; &emsp;
+	</div>
+
+	<div class="column1">
+	  <a href="#"> <img src="/static/home/images/safeBanner.png" alt="COVID-19"></a>
+	</div>
+
+
+	<!---
+	<div class="column1">
+		<a href="#"> <img src="/static/home/images/img.jpg" alt="easy buy"></a>
+	</div>
+
+	-->
+
+</div> 
+
+
+
+<br><br>
+
+<!--slideshow in home page -->
+<div class="galleryContainer">
+    <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+		<div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+		
+        <div class="imageHolder">
+            <img src="static/home/images/a.jpg">
+            <p class="captionText">Payment Offer</p>
+		</div>
+		
+        <div class="imageHolder">
+            <img src="static/home/images/b.jpg">
+            <p class="captionText">#StayAtHome</p>
+		</div>
+		
+        <div class="imageHolder">
+            <img src="static/home/images/c1.jpg">
+            <p class="captionText">Offer Price</p>
+		</div>
+		
+		<div class="imageHolder">
+            <img src="static/home/images/d1.jpg">
+            <p class="captionText">Combo Offer</p>
+		</div>
+		
+		<div class="imageHolder">
+            <img src="static/home/images/e.jpg">
+            <p class="captionText">Skin Cafe's Offer</p>
+		</div>
+
+		<div class="imageHolder">
+            <img src="static/home/images/f1.jpg">
+            <p class="captionText">New Product</p>
+		</div>
+
+		<div class="imageHolder">
+            <img src="static/home/images/g.jpg">
+            <p class="captionText">Combo Pack</p>
+		</div>
+
+		<div class="imageHolder">
+            <img src="static/home/images/h.jpeg">
+            <p class="captionText">Biotique Product</p>
+		</div>
+
+		<div class="imageHolder">
+            <img src="static/home/images/i.png">
+            <p class="captionText"></p>
+		</div>
+
+		<div class="imageHolder">
+            <img src="static/home/images/j.png">
+            <p class="captionText">Discount Price</p>
+		</div>
+		
+    </div>
+    <div id="dotsContainer"></div>
+</div>
+
+
+<br><br><br><br><br><br>
+
+
+
+<div class="Choose">
+	<h1>Why Choose Busket for Shopping..??</h1>
+</div>
+<br>
+
+<div class="row">
+
+	<div class="column">
+	  <a href="#"><img src="static/home/images/free-shipping2.jpg" alt="Free Shipping"></a>
+	</div>
+	<div class="column">
+	  <a href="#"> <img src="static/home/images/fast-delivery.jpg" alt="Fast Delivery"></a>
+	</div>
+	<div class="column">
+	  <a href="#"><img src="static/home/images/organic_food.jpg" alt="Organic Food"></a>
+	</div>
+
+</div> 
+
+<br><br>
+
+
+
+
+
+
+<!---------footer----------->
+<div class="footer">
+	<div class="footer-content">
+		<div class="footer-section about">
+			
+			<h1 class="logo-text"><i class="fas fa-shopping-cart" style="font-size:36px"></i><span>   BAS</span>KET</h1><br><br>
+			<p>
+				BASKET is a Supper Maket at Dhaka in Bangladesh. You can buy more product from this market,
+				such as foods, cloths, Groceries, cosmatics and so on. This also a digital super market.
+			</p><br>
+
+			<p><i class="fas fa-map-marker-alt"></i> A/2, Jahurul Islam Avenue<br>
+                Jahurul Islam City, Aftabnagar<br>
+                Dhaka-1212, Bangladesh. </p><br>
+
+			<div class="contact">
+				<span><i class="fas fa-phone"></i> &nbsp; +880-17-900-10792</span>
+				<span><i class="fas fa-envelope"></i> &nbsp; info@baskat.com</span>
+			</div>
+			<h2>Follow Us</h2><br>
+			<div class="socials">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+		
+		<div class="footer-section links">
+			<h2>Quick Links</h2>
+			<br>
+			<br>
+			<ul>
+				<a href="#"><li>Home</li></a>
+				<a href="#"><li>About Basket</li></a>
+				<a href="#"><li>Gallary</li></a>
+				<a href="#"><li>Contact Us</li></a>
+				<a href="#"><li>Login</li></a>
+				<a href="#"><li>Careers at Basket</li></a>
+				<a href="#"><li>Terms and Conditions</li></a>
+				<a href="#"><li>Privacy and Policy</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-section contact-form">
+			<h2>Contact us</h2>
+			<br>
+			<br>
+			<br>
+			<form action="Home.html" method="post">
+				<input type="email" name="email" class="text-input contact-input" placeholder="Write your email address...."><br>
+				<textarea name="message" class="text-input contact-input" placeholder="Write your message....."></textarea><br>
+				<button type="submit" class="btn btn-big contact-btn">
+					<i class="fas fa-envelope"></i>
+					Send
+				</button>
+			</form>
+			<br>
+			<br>
+			<h2>Payment method</h2>
+			<span class="dc_payment_icons_bevel_48 dc_visa_bevel" title="Visa"></span>
+            <span class="dc_payment_icons_bevel_48 dc_mastercard_bevel" title="Mastercard"></span>
+            <span class="dc_payment_icons_bevel_48 dc_paypal_bevel" title="PayPal"></span>
+            <a href="#"><i class="bkash"><b>bkash</b></i></a>
+
+		</div>	
+	</div>
+
+
+
+
+
+	<!---copyright section-->
+	<div>
+		<footer>
+			<p>
+				<div class="copyright">
+			     Copyright &copy; 2020<strong> BUSKET.com </strong>. All Right Reserved 
+		        </div>
+		        <div class="credits">
+			     Designed by <a target="_blank" href="https://github.com/CSESHANEWAZ">MD.Shanewaz</a> ;
+			     Visit my website <a target="_blank" href="https://sites.google.com/view/cseshanewaz/">here. </a>
+		        </div>
+			</p>
+		</footer>
+	</div>
+
+</div>
+
+
+<!----//footer------->
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+		integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" 
+		crossorigin="anonymous">
+</script>
+
+
+
+
+
+<script src="static/home/js/home_slider.js"></script>
+</body>
+</html>

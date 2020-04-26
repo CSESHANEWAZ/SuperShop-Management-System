@@ -1,0 +1,65 @@
+.title{
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	color: crimson !important;
+}
+
+
+
+
+#logo{
+	}
+
+	body{
+		background-color: #ebeff5;
+	}
+
+
+	#total-orders{
+		background-color: crimson;
+	}
+
+
+	#orders-delivered{
+		background-color: crimson;
+	}
+
+	#orders-pending{
+		background-color: crimson;
+	}
+
+
+
+	footer{
+		background-color: crimson;
+		width: 100%;
+		font-size: 13px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		z-index: 999;
+		position: fixed;
+	}
+	
+	footer .copyright {
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	
+	footer a {
+		color: white;
+		text-decoration: none;
+		font-size: small;
+		letter-spacing: 1px;
+		font-family: 'Gotu', sans-serif;
+	}
+	
+	footer .credits {
+		text-align: center;
+		font-size: 13px;
+		color: black;
+	}
+	
+	footer .credits a:hover {
+		color: skyblue;
+	}
